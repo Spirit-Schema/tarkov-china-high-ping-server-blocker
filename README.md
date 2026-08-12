@@ -2,7 +2,7 @@
 
 Escape from Tarkov의 China 지역 안에서 특정 회선에 높은 지연을 유발하는 것으로 의심되는 서버 IP만 Windows 방화벽으로 차단하거나 차단 해제하는 작은 Windows 도구입니다.
 
-이 도구는 Battlestate Games 또는 Escape from Tarkov의 공식 도구가 아닙니다. 서버 IP와 매칭 방식은 예고 없이 바뀔 수 있으며, 차단된 서버에 레이드가 이미 배정되면 `Server Connection Lost`가 발생할 수도 있습니다. PMC보다 스캐브로 먼저 테스트하세요.
+이 도구는 Battlestate Games 또는 Escape from Tarkov의 공식 도구가 아닙니다. 서버 IP와 매칭 방식은 예고 없이 바뀔 수 있으며, 차단된 서버에 레이드가 이미 배정되면 `Server Connection Lost`가 발생할 수도 있습니다.
 
 ## 다운로드 및 사용
 
