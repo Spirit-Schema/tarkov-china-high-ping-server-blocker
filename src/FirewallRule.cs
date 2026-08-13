@@ -6,7 +6,11 @@ namespace ExcludeChinaHighPingServerTool
     {
         internal static readonly string[] Addresses =
         {
-            "209.58.188.216",
+            "209.58.188.216"
+        };
+
+        private static readonly string[] LegacyAddresses =
+        {
             "209.58.190.117",
             "209.58.191.183"
         };
@@ -52,10 +56,9 @@ namespace ExcludeChinaHighPingServerTool
 
         internal static void AddOrReplace(dynamic policy)
         {
-            foreach (string address in Addresses)
-            {
-                RemoveIfPresent(policy, GetRuleName(address));
-            }
+            // Also remove the two candidates used by v1.1.0 so running this
+            // version upgrades an existing installation to the single-IP rule.
+            RemoveAll(policy);
 
             try
             {
@@ -66,12 +69,8 @@ namespace ExcludeChinaHighPingServerTool
             }
             catch
             {
-                // Do not leave a partially applied set if creating one rule fails.
-                foreach (string address in Addresses)
-                {
-                    RemoveIfPresent(policy, GetRuleName(address));
-                }
-
+                // Do not leave a partially applied set if creating a rule fails.
+                RemoveAll(policy);
                 throw;
             }
         }
@@ -102,8 +101,16 @@ namespace ExcludeChinaHighPingServerTool
         internal static int RemoveAll(dynamic policy)
         {
             int removedCount = 0;
+            removedCount += RemoveAddresses(policy, Addresses);
+            removedCount += RemoveAddresses(policy, LegacyAddresses);
+            return removedCount;
+        }
 
-            foreach (string address in Addresses)
+        private static int RemoveAddresses(dynamic policy, string[] addresses)
+        {
+            int removedCount = 0;
+
+            foreach (string address in addresses)
             {
                 if (RemoveIfPresent(policy, GetRuleName(address)))
                 {
