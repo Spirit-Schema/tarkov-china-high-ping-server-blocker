@@ -1,3 +1,6 @@
+# Copyright © 2026 Spirit-Schema. All rights reserved.
+# Licensed under the Tarkov Server Guard Source-Available Freeware License 1.0.
+
 name: Build
 
 on:
@@ -20,6 +23,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: tarkov-china-high-ping-server-blocker
-          path: |
-            dist/*.exe
-            dist/SHA256SUMS.txt
+          path: dist/*

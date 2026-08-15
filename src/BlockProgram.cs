@@ -1,11 +1,15 @@
+// Copyright © 2026 Spirit-Schema. All rights reserved.
+// Licensed under the Tarkov Server Guard Source-Available Freeware License 1.0.
+
 using System;
 using System.Reflection;
 using System.Windows.Forms;
 
 [assembly: AssemblyTitle("Exclude China High-Ping Server")]
 [assembly: AssemblyDescription("Blocks the confirmed Escape from Tarkov high-ping server IP using Windows Firewall.")]
-[assembly: AssemblyCompany("Community utility")]
+[assembly: AssemblyCompany("Spirit-Schema")]
 [assembly: AssemblyProduct("ExcludeChinaHighPingServer")]
+[assembly: AssemblyCopyright("Copyright © 2026 Spirit-Schema. All rights reserved.")]
 [assembly: AssemblyVersion("1.1.1.0")]
 [assembly: AssemblyFileVersion("1.1.1.0")]
 

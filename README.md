@@ -68,6 +68,10 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\build.ps1
 ```text
 dist\ExcludeChinaHighPingServer.exe
 dist\ExcludeChinaHighPingServer_Delete.exe
+dist\Tarkov-China-High-Ping-Server-Blocker-v1.1.1.zip
+dist\Tarkov-China-High-Ping-Server-Blocker-Source-v1.1.1.zip
+dist\LICENSE.txt
+dist\THIRD_PARTY_NOTICES.md
 dist\SHA256SUMS.txt
 ```
 
@@ -79,6 +83,14 @@ dist\SHA256SUMS.txt
 
 문제가 생기면 `ExcludeChinaHighPingServer_Delete.exe`를 실행해 이 도구가 만든 규칙을 모두 제거할 수 있습니다.
 
-## 라이선스
+## 라이선스 및 공식 배포
 
-현재 별도의 오픈소스 라이선스를 부여하지 않았습니다. 소스 코드는 동작 확인과 투명성을 위해 공개되어 있습니다.
+- 모든 기능을 무료로 사용할 수 있는 프리웨어입니다.
+- 소스는 안전성과 투명성 확인을 위해 공개합니다.
+- OSI 오픈소스가 아닌 소스 공개형(Source-Available) 소프트웨어입니다.
+- 제작자의 허가 없는 수정본 배포, 재배포, 판매 및 상업적 이용을 금지합니다.
+- 공식 배포처는 [Spirit-Schema GitHub Releases](https://github.com/Spirit-Schema/tarkov-server-guard/releases)입니다.
+- 비공식 배포본은 안전성과 정상 작동을 보증하거나 지원하지 않습니다.
+- 제3자 구성요소는 각각의 기존 라이선스를 따릅니다.
+
+전체 조건은 [`LICENSE`](LICENSE), 제3자 고지는 [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md)에서 확인할 수 있습니다.

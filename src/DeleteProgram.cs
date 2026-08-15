@@ -1,11 +1,15 @@
+// Copyright © 2026 Spirit-Schema. All rights reserved.
+// Licensed under the Tarkov Server Guard Source-Available Freeware License 1.0.
+
 using System;
 using System.Reflection;
 using System.Windows.Forms;
 
 [assembly: AssemblyTitle("Exclude China High-Ping Server - Delete")]
 [assembly: AssemblyDescription("Removes the Windows Firewall rules created by ExcludeChinaHighPingServer.exe.")]
-[assembly: AssemblyCompany("Community utility")]
+[assembly: AssemblyCompany("Spirit-Schema")]
 [assembly: AssemblyProduct("ExcludeChinaHighPingServer_Delete")]
+[assembly: AssemblyCopyright("Copyright © 2026 Spirit-Schema. All rights reserved.")]
 [assembly: AssemblyVersion("1.1.0.0")]
 [assembly: AssemblyFileVersion("1.1.0.0")]
 

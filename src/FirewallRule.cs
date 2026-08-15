@@ -1,3 +1,6 @@
+// Copyright © 2026 Spirit-Schema. All rights reserved.
+// Licensed under the Tarkov Server Guard Source-Available Freeware License 1.0.
+
 using System;
 
 namespace ExcludeChinaHighPingServerTool
