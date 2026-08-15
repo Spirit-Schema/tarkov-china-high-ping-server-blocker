@@ -1,5 +1,8 @@
 # Tarkov China High-Ping Server Blocker
 
+> [!IMPORTANT]
+> 이 프로젝트의 후속 통합 도구는 [Tarkov Server Guard](https://github.com/Spirit-Schema/tarkov-server-guard)입니다. EFT·Arena 접속 기록, 핑·지역 조회, 서버별 차단·해제와 차단 현황을 한곳에서 제공합니다. 신규 사용자는 [최신 Server Guard 릴리스](https://github.com/Spirit-Schema/tarkov-server-guard/releases/latest)를 권장합니다.
+
 Escape from Tarkov의 China 지역에서 고핑이 확인된 서버 `209.58.188.216`으로 향하는 송신 연결만 Windows 방화벽으로 차단하거나 원상복구하는 작은 Windows 도구입니다.
 
 이 도구는 Battlestate Games 또는 Escape from Tarkov의 공식 도구가 아닙니다.
